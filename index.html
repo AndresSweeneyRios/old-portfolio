@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andres Sweeney-Rios, a portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <h2 id="home">Home</h2>
+        <h2 id="contact">About</h2>
+        <h2 id="contact">Contact</h2>
+    </div>
+    
+    <div id="page">
+        <div id="log">
+            <div class="entry" v-for="(i,key) in entries" v-bind:style="`background-color:${key % 2 === 0 ? '#ff5380':'#50cab8'};`">
+                <h3 class="title">{{i.title}}</h3>
+                <h3 class="date">{{i.date}}</h3>
+                <h3 class="desc">{{i.desc}}</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

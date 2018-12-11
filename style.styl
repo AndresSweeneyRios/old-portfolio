@@ -1,0 +1,69 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat'
+
+$fontLight = rgb(240,240,240)
+$black = rgb(20,20,20)
+
+* 
+    font-family Montserrat, sans-serif
+    margin 0
+    padding 0
+    color $fontLight
+    font-weight 300
+
+body
+    background-color $black
+    box-sizing border-box
+
+#nav
+    width 100%
+    display flex
+    justify-content right
+    padding 15px
+    box-sizing border-box
+
+    *
+        padding-left 5px
+        padding-right 5px
+        cursor default
+        transition border 0.1s
+        border-bottom 2px solid transparent
+        margin-left 10px
+        &:hover
+            border-bottom 2px solid $fontLight
+
+    #home 
+        position absolute
+        left 15px
+        margin-left 0
+
+.entry
+    width calc(33.33% - 15px)
+    box-sizing border-box
+    padding 20px
+    margin 15px
+    display block
+    flex-direction column
+    align-items left
+    justify-content center
+    margin-top 0
+    margin-right 0
+    height 300px
+    overflow-y auto
+    overflow-x hidden
+    .title,.date
+        box-sizing border-box
+        padding-bottom 5px
+        font-size 1.6em
+    .date
+        font-size 1.3em
+        opacity 0.8
+        margin-bottom 20px
+    .desc
+        text-align left
+
+#log
+    display flex
+    flex-wrap wrap
+    flex-direction row
+    box-sizing border-box
+    padding-right 15px

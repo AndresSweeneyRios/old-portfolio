@@ -1,0 +1,23 @@
+{
+    "entries": [{
+        "title": "YaaiiA",
+        "date": "10/26/2018 - 11/4/2018",
+        "desc": "Short for \"Yet another alien invasion in Atlanta\", this was an entry for the Dreamhack Atlanta 2018 game jam that I collaborated on, developed in Unity."
+    }, {
+        "title": "Twilight Punkster Galaxy",
+        "date": "10/24/2018 - Present",
+        "desc": "Started work on the MMORPG \"Twilight Punkster Galaxy\" as a fullstack developer, working with Express and Vue.js. "
+    }, {
+        "title": "Stardust",
+        "date": "10/11/2018 - 10/24/2018",
+        "desc": "Briefly worked with Stardust's blockchain technologies in Electron before immediately moving to TPG."
+    }, {
+        "title": "Corgi Stack 3D",
+        "date": "10/01/2018 - Present",
+        "desc": "Sequel to my jam entry for the 2016 Corgsmas jam, Corgi Stack 3D is a reimagined puzzle-platformer comprised of various breeds and sizes of dogs acting as moving platforms."
+    }, {
+        "title": "Untitled Worm I/O",
+        "date": "08/01/2018 - 08/07/2018",
+        "desc": "A shortlived Slither.io inspired project, utilizing cryptocurrency as a driving mechanic."
+    }]
+}
