@@ -7,7 +7,7 @@
     <title>Andres Sweeney-Rios</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://vuejs.org/js/vue.min.js"></script>
-    <script src="html2canvas.min.js"></script>
+    <script src="html2canvas.min.js" async onload="renderHTML()"></script>
 </head>
 <body>
     <div id="nav">
@@ -15,7 +15,7 @@
         <h2 id="about">About</h2>
         <h2 id="contact">Contact</h2>
     </div>
-    
+
     <div id="page">
         <div id="log" v-if="page == 'home'">
             <div class="entry" v-for="(i,key) in entries" v-bind:style="`background-color:${key % 2 === 0 ? '#ff5380':'#50cab8'};`">
@@ -44,13 +44,13 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-
-    <svg height="0">
+    <svg height="0" xmlns="http://www.w3.org/2000/svg">
         <filter id="displacementFilter">
-            <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="10" result="turbulence"/>
-            <feDisplacementMap id="displacementMap" in2="turbulence" in="SourceGraphic" scale="0" xChannelSelector="R" yChannelSelector="B"/>
+            <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="50" result="turbulence"/>
+            <feDisplacementMap id="displacementMap" in2="turbulence" in="SourceGraphic" scale="500" xChannelSelector="R" yChannelSelector="B"/>
         </filter>
     </svg>
+
+    <script src="script.js"></script>
 </body>
 </html>

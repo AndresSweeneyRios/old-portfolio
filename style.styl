@@ -21,6 +21,7 @@ body
     background-repeat no-repeat
     background-size auto 100vh
     background-attachment fixed
+    overflow-x hidden
 
 #nav
     width 100%
@@ -148,4 +149,6 @@ a
     opacity 0.5
     filter url(#displacementFilter) blur(1px)
     background-color $black
-    transition filter 0.5s
+    image-rendering optimizeSpeed
+    image-rendering pixelated
+    backface-visibility hidden

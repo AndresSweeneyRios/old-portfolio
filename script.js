@@ -12,7 +12,7 @@ fetch (location.origin + '/entries.json')
     .then(d=>d.json())
     .then(d=>{
         page.entries = d.entries;
-        renderHTML();
+        if (html2canvas) page.$nextTick(renderHTML);
     }).catch(console.error);
 
 window.addEventListener('click', e => {
@@ -24,29 +24,19 @@ window.addEventListener('click', e => {
 });
 
 const renderHTML = () => {
-    if ($('#html-canvas')) {
-        $('#html-canvas').getContext('2d').clearRect(0,0,$('#html-canvas').width,$('#html-canvas').height);
-        $('#html-canvas').remove();
-    }
-
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if ($('#html-canvas')) {
+            $('#html-canvas').getContext('2d').clearRect(0,0,$('#html-canvas').width,$('#html-canvas').height);
+            $('#html-canvas').remove();
+        }
+
         html2canvas(document.body).then(canvas => {
             canvas.id = "html-canvas";
             document.body.prepend(canvas);
-            meltCanvas();
         });
     }
 
 }
-
-const meltCanvas = (
-    scale = 0
-) => {
-    setInterval(()=>{
-        scale+=1; 
-        $('#displacementFilter').children[1].setAttribute('scale',scale)
-    },50);
-};
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
     $('body').style.backgroundImage = 'url(static_bg.png)';
