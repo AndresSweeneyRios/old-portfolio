@@ -16,6 +16,11 @@ body
     background-color $black
     box-sizing border-box
     width 100%
+    min-height 100vh
+    background-position top left
+    background-repeat no-repeat
+    background-size auto 100vh
+    background-attachment fixed
 
 #nav
     width 100%
@@ -134,3 +139,13 @@ a
 .mobile-only
     @media (min-width: 600px)
         display none
+
+#html-canvas
+    position fixed
+    top 0
+    left 0
+    z-index -14
+    opacity 0.5
+    filter url(#displacementFilter) blur(1px)
+    background-color $black
+    transition filter 0.5s

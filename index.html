@@ -7,6 +7,7 @@
     <title>Andres Sweeney-Rios</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://vuejs.org/js/vue.min.js"></script>
+    <script src="html2canvas.min.js"></script>
 </head>
 <body>
     <div id="nav">
@@ -44,5 +45,12 @@
     </div>
 
     <script src="script.js"></script>
+
+    <svg height="0">
+        <filter id="displacementFilter">
+            <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="10" result="turbulence"/>
+            <feDisplacementMap id="displacementMap" in2="turbulence" in="SourceGraphic" scale="0" xChannelSelector="R" yChannelSelector="B"/>
+        </filter>
+    </svg>
 </body>
 </html>
