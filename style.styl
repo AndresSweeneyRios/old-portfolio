@@ -149,6 +149,6 @@ a
     opacity 0.5
     filter url(#displacementFilter) blur(1px)
     background-color $black
-    image-rendering optimizeSpeed
-    image-rendering pixelated
-    backface-visibility hidden
+    backface-visibility: hidden;
+    transform: translateZ(0); /*for older browsers*/
+    will-change: transform;

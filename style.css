@@ -158,7 +158,7 @@ a:hover {
   opacity: 0.5;
   filter: url("#displacementFilter") blur(1px);
   background-color: #141414;
-  image-rendering: optimizeSpeed;
-  image-rendering: pixelated;
   backface-visibility: hidden;
+  transform: translateZ(0); /*for older browsers*/
+  will-change: transform;
 }
