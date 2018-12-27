@@ -1,23 +1,47 @@
 {
     "entries": [{
         "title": "YaaiiA",
-        "date": "10/26/2018 - 11/4/2018",
-        "desc": "Short for \"Yet another alien invasion in Atlanta\", this was an entry for the Dreamhack Atlanta 2018 game jam that I collaborated on, developed in Unity."
+        "date": "10/26/18 - 11/4/18",
+        "desc": "Short for \"Yet another alien invasion in Atlanta\", this was an entry for the Dreamhack Atlanta 18 game jam that I collaborated on, developed in Unity."
     }, {
         "title": "Twilight Punkster Galaxy",
-        "date": "10/24/2018 - Present",
+        "date": "10/24/18 - Present",
         "desc": "Started work on the MMORPG \"Twilight Punkster Galaxy\" as a fullstack developer, working with Express and Vue.js. "
     }, {
         "title": "Stardust",
-        "date": "10/11/2018 - 10/24/2018",
+        "date": "10/11/18 - 10/24/18",
         "desc": "Briefly worked with Stardust's blockchain technologies in Electron before immediately moving to TPG."
     }, {
         "title": "Corgi Stack 3D",
-        "date": "10/01/2018 - Present",
+        "date": "10/01/18 - Present",
         "desc": "Sequel to my entry for the 2016 Corgsmas game jam, Corgi Stack 3D is a reimagined puzzle-platformer comprised of various breeds and sizes of dogs acting as moving platforms."
     }, {
+        "title": "Mere Mercy",
+        "date": "9/2/18 - Present",
+        "desc": "A collaborative project for an Android Zombie Shooter game, built in Unity."
+    }, {
+        "title": "Cherry",
+        "date": "9/30/18 - Present",
+        "desc": "Chatbot build in Node.js with Discord.js, it is capable of playing music with the help of youtube-dl."
+    }, {
         "title": "Untitled Worm I/O",
-        "date": "08/01/2018 - 08/07/2018",
+        "date": "8/01/18 - 8/07/18",
         "desc": "A shortlived Slither.io inspired project, utilizing cryptocurrency as a driving mechanic."
-    }, {}]
+    }, {
+        "title": "Shh - Encrypted Chat",
+        "date": "7/31/18 - Present",
+        "desc": "Peer to peer encrypted chat client built in Electron with WebRTC and WebSockets. Encryption was done with AES and RSA."
+    }, {
+        "title": "Sandbox",
+        "date": "6/4/18 - Present",
+        "desc": "Work in progress JavaScript Sandbox. It uses WebRTC and Socket.io for player communication, and is built in Electron."
+    }, {
+        "title": "Bearmon",
+        "date": "8/11/17 - 8/18/17",
+        "desc": "An online multiplayer bear turn based RPG for the 2017 Bear Week jam on Game Jolt"
+    }, {
+        "title": "Unnamed Isoline Map",
+        "date": "10/24/17 - 11/02/17",
+        "desc": "An isoline generator built in jQuery, it uses Leaflet maps."
+    }]
 }

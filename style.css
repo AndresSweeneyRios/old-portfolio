@@ -95,6 +95,17 @@ body {
 #about-page {
   padding: 15px;
 }
+#about-page h2 {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+}
+#about-page h3 {
+  width: calc(100% / 3);
+  float: left;
+  text-align: center;
+}
 #about-page img {
   width: 100%;
   border-radius: 15px;
@@ -156,9 +167,6 @@ a:hover {
   left: 0;
   z-index: -14;
   opacity: 0.5;
-  filter: url("#displacementFilter") blur(1px);
+  filter: blur(1px);
   background-color: #141414;
-  backface-visibility: hidden;
-  transform: translateZ(0); /*for older browsers*/
-  will-change: transform;
 }

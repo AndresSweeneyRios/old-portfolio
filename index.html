@@ -7,7 +7,7 @@
     <title>Andres Sweeney-Rios</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://vuejs.org/js/vue.min.js"></script>
-    <script src="html2canvas.min.js" async onload="renderHTML()"></script>
+    <script src="html2canvas.min.js" async></script>
 </head>
 <body>
     <div id="nav">
@@ -27,29 +27,20 @@
 
         <div id="about-page" v-if="page == 'about'">
             <img ALIGN="left" id="avatar" src="avatar.png"> 
-            <p id="bio">
-                Hello, I'm Andres, a 16 year old software developer and illustrator from California. <span class="mobile-only"><br><br></span> I've made desktop software, mobile applications, video games, and of course, web applications.
-                <br><br>I work with a large variety of languages and tools, and in all sorts of environments. More often than not, my projects are developed using Vue.js and Express. I've worked with game engines Construct 2, Game Maker: Studio, Godot, and Unity. My illustrators of choice are GIMP and Inkscape. A lot of my work can be found on <a target="_blank" href="https://github.com/">GitHub</a> and <a target="_blank" href="https://gamejolt.com/@AndrewRivers">GameJolt</a>.
-                <br><br>I am a hobbyist creator in many fields, including music. I am a pianist and chiptune producer. You can find some of my music on my <a target="_blank" href="https://soundcloud.com/andr3wriv3rs">SoundCloud</a> account.
-                <br><br>
-            </p>
+            <p id="bio" v-html="bio"></p>
+
+            <!-- <h2>Skillset</h2>
+            <h3 v-for="i in skillset">{{i}}</h3> -->
         </div>
 
         <div id="contact-page" v-if="page == 'contact'">
             <span>
-                <h3>Twitter: @Andr3wRiv3rs</h3>
-                <h3>E-Mail: andrewarivers@gmail.com</h3>
-                <h3>Discord: Poison Apple#9351</h3>
+                <h3>Twitter: <a target="_blank" href="https://twitter.com/andr3wriv3rs">@Andr3wRiv3rs</a></h3>
+                <h3>E-Mail: <a target="_blank" href="mailto:andrewarivers@gmail.com">andrewarivers@gmail.com</a></h3>
+                <h3>Discord: <a target="_blank" href="https://discordapp.com/channels/@me">Poison Apple#9351</a></h3>
             </span>
         </div>
     </div>
-
-    <svg height="0" xmlns="http://www.w3.org/2000/svg">
-        <filter id="displacementFilter">
-            <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="50" result="turbulence"/>
-            <feDisplacementMap id="displacementMap" in2="turbulence" in="SourceGraphic" scale="500" xChannelSelector="R" yChannelSelector="B"/>
-        </filter>
-    </svg>
 
     <script src="script.js"></script>
 </body>

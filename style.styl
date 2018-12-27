@@ -91,6 +91,17 @@ body
 
 #about-page
     padding 15px
+    h2
+        float left
+        text-align center
+        width 100%
+        font-size 30px
+
+    h3
+        width calc(100%/3)
+        float left
+        text-align center
+
     img 
         width 100%
         border-radius 15px
@@ -147,8 +158,5 @@ a
     left 0
     z-index -14
     opacity 0.5
-    filter url(#displacementFilter) blur(1px)
+    filter blur(1px)
     background-color $black
-    backface-visibility: hidden;
-    transform: translateZ(0); /*for older browsers*/
-    will-change: transform;
